@@ -1,0 +1,70 @@
+@media screen {
+@font-face {
+  font-family: 'Glass Antiqua';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Glass Antiqua'), local('GlassAntiqua-Regular'), url('http://themes.googleusercontent.com/static/fonts/glassantiqua/v1/0yLrXKplgdUDIMz5TnCHNKyztDLpUjNAkGAPlCwy4fk.woff') format('woff');
+}
+}
+
+body {
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAE0lEQVQIW2NkwAIYqSx48+bN/wAKRAOQQGdqtQAAAABJRU5ErkJggg==) repeat;
+    margin: 0;
+    
+    font-family: 'Glass Antiqua';
+    font-size: 18px;
+}
+
+::selection {background: #9cd69e;}
+::-moz-selection {background: #9cd69e;}
+::-webkit-selection {background: #9cd69e;}
+
+#main {
+    position: absolute;
+    left: 50%;
+    min-height: 100%;
+}
+
+#wrapper {
+    position: relative;
+    left: -50%;
+    max-width: 400px;
+}
+
+#title {
+    width: 95%;
+    
+    margin-top: 2.5em;
+    
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    text-shadow: 0 1px 0 #aaa, 0 2px 0 #aaa;
+}
+
+#title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#title a:hover {
+    text-shadow: 0 1px 0 #9cd69e, 0 2px 0 #9cd6aa;
+}
+
+#instruction {
+    
+}
+
+#content {
+    background: #f0f0f0;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    
+    -moz-box-shadow: 0 -2px 2px #aaa;
+    -webkit-box-shadow: 0 -2px 2px #aaa;
+    box-shadow: 0 -2px 2px #aaa;
+      
+    padding: 3em;
+}
