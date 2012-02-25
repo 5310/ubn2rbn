@@ -5,14 +5,22 @@
   font-weight: 500;
   src: local('Glass Antiqua'), local('GlassAntiqua-Regular'), url('http://themes.googleusercontent.com/static/fonts/glassantiqua/v1/0yLrXKplgdUDIMz5TnCHNKyztDLpUjNAkGAPlCwy4fk.woff') format('woff');
 }
+@font-face {
+  font-family: 'Durga';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Ekushey Durga'), local('Durga_03-09-2005.ttf');
+  unicode-range: U+980-9FF;
+}
 }
 
 body {
     background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAE0lEQVQIW2NkwAIYqSx48+bN/wAKRAOQQGdqtQAAAABJRU5ErkJggg==) repeat;
     margin: 0;
     
-    font-family: 'Glass Antiqua';
+    font-family: 'Durga', 'Glass Antiqua';
     font-size: 18px;
+    line-height: 22px;
 }
 
 ::selection {background: #9cd69e;}
