@@ -99,7 +99,7 @@
             // conversion //
             
             // get raw html, for now
-            var text = $('#content *');
+            var text = $('body *');
             
             // do the astral plane!
             var u;
