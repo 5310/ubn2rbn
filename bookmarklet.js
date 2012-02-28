@@ -99,19 +99,16 @@
             // conversion //
             
             // get raw html, for now
-            var text = $('#content').html();
+            var text = $('#content *');
             
             // do the astral plane!
             var u;
             for ( u in phrasemap )
-                text = text.replace(RegExp(u, 'g'), phrasemap[u]);
+                text.replaceText(RegExp(u, 'g'), phrasemap[u]);
             for ( u in compmap )
-                text = text.replace(RegExp(u, 'g'), compmap[u]);
+                text.replaceText(RegExp(u, 'g'), compmap[u]);
             for ( u in charmap )
-                text = text.replace(RegExp(u, 'g'), charmap[u]);
-            
-            // replace raw html
-            $('#content').html(text);
+                text.replaceText(RegExp(u, 'g'), charmap[u]);
             
             /////////////////////////////
             // end of bookmarklet code //
