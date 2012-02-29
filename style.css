@@ -1,17 +1,17 @@
 @media screen {
-@font-face {
-  font-family: 'Glass Antiqua';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Glass Antiqua'), local('GlassAntiqua-Regular'), url('http://themes.googleusercontent.com/static/fonts/glassantiqua/v1/0yLrXKplgdUDIMz5TnCHNKyztDLpUjNAkGAPlCwy4fk.woff') format('woff');
-}
-@font-face {
-  font-family: 'Durga';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Ekushey Durga'), local('Durga_03-09-2005.ttf');
-  unicode-range: U+980-9FF;
-}
+    @font-face {
+      font-family: 'Glass Antiqua';
+      font-style: normal;
+      font-weight: 500;
+      src: local('Glass Antiqua'), local('GlassAntiqua-Regular'), url('http://themes.googleusercontent.com/static/fonts/glassantiqua/v1/0yLrXKplgdUDIMz5TnCHNKyztDLpUjNAkGAPlCwy4fk.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'Durga';
+      font-style: normal;
+      font-weight: 500;
+      src: local('Ekushey Durga'), local('Durga_03-09-2005.ttf');
+      unicode-range: U+980-9FF;
+    }
 }
 
 body {
