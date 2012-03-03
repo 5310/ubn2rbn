@@ -63,7 +63,7 @@
             
             // composite glyphs
             var compmap = {
-                'স্ব: 'sw',
+                'স্ব': 'sw',
                 'য়':'y',
                 '৷৷':'.',
             };
