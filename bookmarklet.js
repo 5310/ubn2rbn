@@ -69,9 +69,8 @@
             };
 
             // standard glyphs
-            var charmap = {    
-                ' ':' ',
-                'অ':'o',
+            var charmap = {
+                'অ':'ô',
                 'আ':'a',
                 'ই':'i',
                 'ঈ':'ee',
