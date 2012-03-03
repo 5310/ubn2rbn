@@ -63,7 +63,8 @@
             
             // composite glyphs
             var compmap = {
-                'স্ব': 'sw'
+                'স্ব': 'sw',
+                'য়':'y',
             };
 
             // standard glyphs
@@ -124,7 +125,6 @@
                 'হ':'h',
                 'ড়':'r',
                 'ঢ়':'rh',
-                'য়':'y',
                 'য়':'y',
                 'ৎ':'t',
                 'ং':'ng',
