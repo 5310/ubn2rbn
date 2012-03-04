@@ -58,8 +58,7 @@
             
             // atypical romanization
             var phrasemap = {
-                'ভাষা':'bhaasha',
-                'য়':'y'
+                'ভাষা':'bhaasha'
             };
             
             // composite glyphs
