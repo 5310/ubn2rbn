@@ -65,6 +65,7 @@
             var compmap = {
                 'য়':'y',
                 'ড়':'r',
+                'ঢ়':'rh',
                 '্য':'y',
                 '্র':'r',
                 'স্ব':'sw',
@@ -128,12 +129,13 @@
                 'ষ':'sh',
                 'স':'s',
                 'হ':'h',
-                'ড়':'r',     //composite, does not work
-                'ঢ়':'rh',    //composite, will not work
-                'য়':'y',     //composite, does not work
+                'ড়':'r',
+                'ঢ়':'rh',
+                'য়':'y',
                 'ৎ':'t',
                 'ং':'ng',
                 'ঃ':'h',
+                'ঁ':'n',
                 '্':'',
                 '়':'',
                 '০':'0',
