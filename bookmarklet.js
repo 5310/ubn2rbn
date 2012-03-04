@@ -130,7 +130,7 @@
                 'হ':'h',
                 'ড়':'r',     //composite, does not work
                 'ঢ়':'rh',    //composite, will not work
-                'য়':'y',     //composite, does not work
+                'য়':'y',     //composite, does not work
                 'ৎ':'t',
                 'ং':'ng',
                 'ঃ':'h',
