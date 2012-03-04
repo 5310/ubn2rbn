@@ -64,7 +64,7 @@
             // composite glyphs
             var compmap = {
                 'য়':'y',
-                'ড়':'r'
+                'ড়':'r',
                 '্য':'y',
                 '্র':'r',
                 'স্ব':'sw',
