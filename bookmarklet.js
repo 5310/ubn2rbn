@@ -63,14 +63,14 @@
             
             // composite glyphs
             var compmap = {
-                'য়':'y',
-                'ড়':'r',
-                'ঢ়':'rh',
-                '্য':'y',	
+                'য়':'oy',
+                'ড়':'ro',
+                'ঢ়':'roh',
+                '্য':'yo',	
                 //'্র':'r',	// Test to see if this really isn't needed.
-                'স্ব':'sw',
-                'ঞ্চ':'nch',
-                'ঙ্গ':'ng',
+                'স্ব':'swo',
+                'ঞ্চ':'ncho',
+                'ঙ্গ':'ngo',
                 '৷৷':'.'
             };
 
