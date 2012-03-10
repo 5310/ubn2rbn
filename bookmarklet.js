@@ -137,22 +137,22 @@
             };
             
             var accentmap = {
-                'oা':'a',
-                'oি':'i',
-                'oী':'ee',
-                'oু':'u',
-                'oূ':'u',
-                'oৃ':'ri',
-                'oে':'e',
-                'oৈ':'oi',
-                'oো':'o',
-                'oৌ':'ou',
+            	'ôyyô':'yô', // Second half of the hack from `compmap`
+                'ôা':'a',
+                'ôি':'i',
+                'ôী':'ee',
+                'ôু':'u',
+                'ôূ':'u',
+                'ôৃ':'ri',
+                'ôে':'e',
+                'ôৈ':'oi',
+                'ôো':'o',
+                'ôৌ':'ou',
                 'ং':'ng',
                 'ঃ':'h',
                 'ঁ':'n',
-                'o্':'',
+                'ô্':'',
                 '়':'',
-                'oyyô':'yô' // Second half of the hack from `compmap`
             };
             
             // conversion //
