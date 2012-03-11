@@ -66,7 +66,7 @@
                 'য়':'yô',
                 'ড়':'rô',
                 'ঢ়':'rhô',
-                '্য':'yyô',	// Needs this hack, for now.	
+                '্য':'`yô',	// Haxxored!	
                 //'o্র':'ro',	// Test to see if this really isn't needed.
                 'স্ব':'swô',
                 'ঞা':'ya',
@@ -138,8 +138,12 @@
                 '।':'.'
             };
             
-            var accentmap = {
+            var hackmap = {
             	'ôyyô':'yô', // Second half of the hack from `compmap`
+            	'`':'';
+            };
+            
+            var accentmap = {
                 'ôা':'a',
                 'ôি':'i',
                 'ôী':'ee',
@@ -170,6 +174,8 @@
                 text.replaceText(RegExp(u, 'g'), compmap[u]);
             for ( u in charmap )
                 text.replaceText(RegExp(u, 'g'), charmap[u]);
+            for ( u in hackmap )
+                text.replaceText(RegExp(u, 'g'), hackmap[u]);
             for ( u in accentmap )
                 text.replaceText(RegExp(u, 'g'), accentmap[u]);
             
