@@ -164,10 +164,11 @@
             
             // oni's algorithm //
             
-            var last_re = /[^\s]([^\s])[\s.,-_]/g;
-            while ((match = last_re.exec(text)) != null) {
-                var position = match.index+1;
-                alert(match);
+            re = /[^\sাীুূ](ত)[\s.,-_]/g;
+            while ((match = re.exec(text)) != null) {
+                //alert("match found at " + match.index);
+                //alert(match);
+                text = text.slice(0, match.index+2) + "্" + text.slice(match.index+2);
             };
             
             // conversion //
