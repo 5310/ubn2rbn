@@ -167,6 +167,8 @@
             var last_re = /[^\s]([^\s])[\s.,-_]/g;
             while ((match = last_re.exec(text)) != null) {
                 var position = match.index+1;
+                if (text.slice(position, position+1) == 'ত')
+                    console.log("YES!");
             };
             
             // conversion //
