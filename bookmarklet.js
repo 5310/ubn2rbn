@@ -140,7 +140,7 @@
             
             var hackmap = {
             	'ôyyô':'yô', // Second half of the hack from `compmap`
-            	'`':'';
+            	'`':''
             };
             
             var accentmap = {
