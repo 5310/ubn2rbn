@@ -162,19 +162,18 @@
                 '্':'',
             };
             
-            // oni's algorithm //
+            // conversion //
             
+            // get raw html, for now
+            var text = $('body *');
+            
+            // oni's algorithm //
             re = /[^\sাীুূ](ত)[\s.,-_]/g;
             while ((match = re.exec(text)) != null) {
                 //alert("match found at " + match.index);
                 //alert(match);
                 text = text.slice(0, match.index+2) + "্" + text.slice(match.index+2);
             };
-            
-            // conversion //
-            
-            // get raw html, for now
-            var text = $('body *');
             
             // do the astral plane!
             var u;
