@@ -165,7 +165,7 @@
             // oni's algorithm //
             
             var last_re = /[^\s]([^\s])[\s.,-_]/g;
-            while ((match = last_re.exec(str)) != null) {
+            while ((match = last_re.exec(text)) != null) {
                 var position = match.index+1;
             };
             
