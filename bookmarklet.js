@@ -171,7 +171,7 @@
             re = /[^\sাীুূ](ত)[\s.,-_]/g;
             while ((match = re.exec(text)) != null) {
                 //alert("match found at " + match.index);
-                //alert(match);
+                alert(match);
                 text = text.slice(0, match.index+2) + "্" + text.slice(match.index+2);
             };
             
