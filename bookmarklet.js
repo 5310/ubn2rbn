@@ -167,7 +167,7 @@
             var last_re = /[^\s]([^\s])[\s.,-_]/g;
             while ((match = last_re.exec(text)) != null) {
                 var position = match.index+1;
-                console.log(text.slice(position, position+1));
+                alert(match);
             };
             
             // conversion //
