@@ -162,6 +162,13 @@
                 '্':'',
             };
             
+            // oni's algorithm //
+            
+            var last_re = /[^\s]([^\s])[\s.,-_]/g;
+            while ((match = last_re.exec(str)) != null) {
+                var position = match.index+1;
+            };
+            
             // conversion //
             
             // get raw html, for now
