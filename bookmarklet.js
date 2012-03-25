@@ -177,7 +177,6 @@
 	        rawtext = rawtext.slice(0, match.index+2) + "্" + rawtext.slice(match.index+2);
             }
             $('body').html(rawtext);
-            console.log(rawtext);
             
             
             // get selector to replaceText() on
@@ -197,7 +196,10 @@
                 text.replaceText(RegExp(u, 'g'), accentmap[u]);
                 
             // Final clean-up    
-            $('body').html($('body').html().replace("্", ""));
+            rawtext = $('body').html();
+            rawtext = rawtext.replace(">", ">!!!!");
+            $('body').html(rawtext);
+            console.log(rawtext);
             
             /////////////////////////////
             // end of bookmarklet code //
