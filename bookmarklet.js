@@ -169,7 +169,8 @@
             
             // oni's algorithm //
             var rawtext = text.html();
-            var re;
+            console.log(rawtext);
+            /*var re;
             re = /[^\sাীুূ্.,-_](ত)[\s.,-_]/g;
             while ((match = re.exec(rawtext)) != null) {
                 rawtext = rawtext.slice(0, match.index+2) + "্" + rawtext.slice(match.index+2);
@@ -178,8 +179,7 @@
             while ((match = re.exec(rawtext)) != null) {
 	        rawtext = rawtext.slice(0, match.index+2) + "্" + rawtext.slice(match.index+2);
             }
-            console.log(rawtext);
-            //text.html(rawtext);
+            text.html(rawtext);*/
             
             // do the astral plane!
             var u;
