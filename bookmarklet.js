@@ -176,7 +176,7 @@
             while ((match = re.exec(rawtext)) != null) {
 	        rawtext = rawtext.slice(0, match.index+2) + "্" + rawtext.slice(match.index+2);
             }
-            text.html(rawtext);
+            $('body').html(rawtext);
             
             
             // get selector to replaceText() on
