@@ -168,7 +168,7 @@
             var text = $('body *');
             
             // oni's algorithm //
-            text = text.slice(0, 10+2) + text.slice(10+2);            
+            console.log(text.slice(0, 10+2));
             
             // do the astral plane!
             var u;
