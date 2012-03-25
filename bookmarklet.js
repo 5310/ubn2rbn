@@ -176,7 +176,7 @@
             while ((match = re.exec(rawtext)) != null) {
 	        rawtext = rawtext.slice(0, match.index+2) + "্" + rawtext.slice(match.index+2);
             }
-            //$('body').html(rawtext);
+            $('body').html(rawtext);
             console.log(rawtext);
             
             
@@ -195,6 +195,9 @@
                 text.replaceText(RegExp(u, 'g'), hackmap[u]);
             for ( u in accentmap )
                 text.replaceText(RegExp(u, 'g'), accentmap[u]);
+                
+            // Final clean-up    
+            $('body').html($('body').html().replace("্", ""));
             
             /////////////////////////////
             // end of bookmarklet code //
