@@ -166,7 +166,7 @@
             
             
             // oni's algorithm //
-            var rawtext = ('body').html();
+            var rawtext = $('body').html();
             var re;
             re = /[^\sাীুূ্.,-_](ত)[\s.,-_]/g;
             while ((match = re.exec(rawtext)) != null) {
