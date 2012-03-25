@@ -195,11 +195,12 @@
             for ( u in accentmap )
                 text.replaceText(RegExp(u, 'g'), accentmap[u]);
                 
+                
             // Final clean-up    
-            rawtext = $('body').html();
-            rawtext = rawtext.replace(">", ">!!!!");
+            var rawtext = $('body').html();
+            rawtext = rawtext.replace(/্/g, "");
             $('body').html(rawtext);
-            console.log(rawtext);
+            
             
             /////////////////////////////
             // end of bookmarklet code //
