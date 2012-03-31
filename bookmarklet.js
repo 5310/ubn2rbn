@@ -131,9 +131,9 @@
                 'ষ':'shô',
                 'স':'sô',
                 'হ':'hô',
-                'ড়':'rô',
-                'ঢ়':'rhô',
-                'য়':'yô',
+                'ড়':'rô',
+                'ঢ়':'rhô',
+                'য়':'yô',
                 'ৎ':'t',
                 '০':'0',
                 '১':'1',
@@ -210,6 +210,15 @@
             // Final clean-up    
             var rawtext = $('body').html();
             rawtext = rawtext.replace(/্/g, "");
+            $('body').html(rawtext);
+            
+            
+            // Sentence-casing //
+            rawtext = $('body').html();
+            re = /[.!?]( *|<.*>)*[^\s]/g;
+            while ((match = re.exec(rawtext)) != null) {
+                rawtext = rawtext.slice(0, match.index+match[0].length-1) + rawtext.slice(match.index+match[0].length-1, match.index+match[0].length).toUpperCase() + rawtext.slice(match.index+match[0].length);
+            }
             $('body').html(rawtext);
             
                         
