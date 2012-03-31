@@ -8,8 +8,8 @@
     var show_throbber = function() {
 	var throbber = document.createElement('div');
 	throbber.id = 'ubn2rbnthrobber';
-	throbber.innerHTML = "...";
-	throbber.style.cssText = ""; //TODO: Set style here.
+	throbber.innerHTML = "please wait";
+	throbber.style.cssText = "position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.5); text-shadow: 0 0 10px white; font-size: 64px; text-align: center; padding-top: 17%;";
 	document.body.appendChild(throbber);
 	load_jq();
     };
