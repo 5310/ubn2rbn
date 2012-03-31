@@ -1,7 +1,7 @@
 (function(){
     
     var initialize = function() {
-        show_throbber();
+        load_jq();
     };
     
     /* This is being done by the bookmarklet script in the link directly
