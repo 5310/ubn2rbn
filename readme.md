@@ -11,7 +11,7 @@ If a system is incapable of displaying Unicode Bengali, or if a person is more c
 Use
 ---
 
-Drag [this link](javascript:(function(){  var throbber = document.createElement('div');   throbber.id = 'ubn2rbnthrobber';   throbber.innerHTML = 'please wait';   throbber.style.cssText = 'position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.5); text-shadow: 0 0 10px white; font-size: 64px; text-align: center; padding-top: 17%;';   document.body.appendChild(throbber);})(); (function(){  document.body.appendChild(document.createElement('script')).src='https://raw.github.com/5310/ubn2rbn/master/bookmarklet.js';})();) to your bookmarklets folder, and then invoke that bookmark while a page you wish to convert is open.
+Drag <a href="javascript:(function(){  var throbber = document.createElement('div');   throbber.id = 'ubn2rbnthrobber';   throbber.innerHTML = 'please wait';   throbber.style.cssText = 'position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.5); text-shadow: 0 0 10px white; font-size: 64px; text-align: center; padding-top: 17%;';   document.body.appendChild(throbber);})(); (function(){  document.body.appendChild(document.createElement('script')).src='https://raw.github.com/5310/ubn2rbn/master/bookmarklet.js';})();">this link</a> to your bookmarklets folder, and then invoke that bookmark while a page you wish to convert is open.
 
 Caveats
 -------
