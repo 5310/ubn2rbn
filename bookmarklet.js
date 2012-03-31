@@ -219,6 +219,10 @@
             while ((match = re.exec(rawtext)) != null) {
                 rawtext = rawtext.slice(0, match.index+match[0].length-1) + rawtext.slice(match.index+match[0].length-1, match.index+match[0].length).toUpperCase() + rawtext.slice(match.index+match[0].length);
             }
+            /*re = /<p.*>( *|<.*>)*[^\s]/g;
+            while ((match = re.exec(rawtext)) != null) {
+                rawtext = rawtext.slice(0, match.index+match[0].length-1) + rawtext.slice(match.index+match[0].length-1, match.index+match[0].length).toUpperCase() + rawtext.slice(match.index+match[0].length);
+            }*/
             $('body').html(rawtext);
             
                         
