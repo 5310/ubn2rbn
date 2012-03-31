@@ -1,7 +1,17 @@
 (function(){
     
     var initialize = function() {
-        load_jq();
+        show_throbber();
+    };
+    
+    //show throbber
+    var show_throbber = function() {
+	var throbber = document.createElement('div');
+	throbber.id = 'ubn2rbnthrobber';
+	throbber.innerHTML = "...";
+	throbber.style.cssText = ""; //TODO: Set style here.
+	document.body.appendChild(throbber);
+	load_jq();
     };
 
     //load jQuery
@@ -201,13 +211,20 @@
             rawtext = rawtext.replace(/্/g, "");
             $('body').html(rawtext);
             
-            
+                        
             /////////////////////////////
             // end of bookmarklet code //
             /////////////////////////////
             
+            hide_throbber();
+            
         })(jQuery);
     }
+    
+    //hide throbber
+    var hide_throbber = function() {
+	$('#ubn2rbnthrobber').remove();
+    };
     
     initialize();
 
