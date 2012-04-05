@@ -79,15 +79,9 @@
                 'ঢ়':'rhô',
                 '্য':'`yô',	// Haxxored!	
                 //'o্র':'ro',	// Test to see if this really isn't needed.
-                'ঙ্ক':'nkô',
-                'ঙ্খ':'nkhô',
-                'ঙ্গ':'ngô',
-                'ঙ্ঘ':'nghô',
-                'জ্ঞ':'ggyô',
-                'ঞা':'ya',
-                'দ্ব':'dwô',
-                'শ্ব':'shwô',
                 'স্ব':'swô',
+                'ঞা':'ya',
+                'ঙ্গ':'ngô',
                 '৷৷':'.',
                 '।।':'.'
             };
@@ -181,7 +175,7 @@
             
             // conversion //
             
-            
+           
             // oni's algorithm //
             var rawtext = $('body').html();
             var re;
@@ -189,10 +183,10 @@
             while ((match = re.exec(rawtext)) != null) {
                 rawtext = rawtext.slice(0, match.index+2) + "্" + rawtext.slice(match.index+2);
             }
-            re = /[^\s্a-bA-B0-9.,-_]([^\s্ঃংৌোৈেৃূুীিাত.,-_])[\s.,-_]/g;
+            /*re = /[^\s্a-bA-B0-9.,-_]([^\s্ঃংৌোৈেৃূুীিাত.,-_])[\s.,-_]/g;
             while ((match = re.exec(rawtext)) != null) {
 	        rawtext = rawtext.slice(0, match.index+2) + "্" + rawtext.slice(match.index+2);
-            }
+            }*/
             $('body').html(rawtext);
             
             
@@ -214,7 +208,7 @@
                 
                 
             // Final clean-up    
-            rawtext = $('body').html();
+            var rawtext = $('body').html();
             rawtext = rawtext.replace(/্/g, "");
             $('body').html(rawtext);
             
