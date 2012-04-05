@@ -208,36 +208,23 @@
                 
                 
             // Final clean-up    
-            var rawtext = $('body').html();
+            rawtext = $('body').html();
             rawtext = rawtext.replace(/্/g, "");
             $('body').html(rawtext);
             
-            
-            // Sentence-casing //
-            rawtext = $('body').html();
-            re = /[.!?]( *|<.*>)*[^\s]/g;
-            while ((match = re.exec(rawtext)) != null) {
-                rawtext = rawtext.slice(0, match.index+match[0].length-1) + rawtext.slice(match.index+match[0].length-1, match.index+match[0].length).toUpperCase() + rawtext.slice(match.index+match[0].length);
-            }
-            /*re = /<p.*>( *|<.*>)*[^\s]/g;
-            while ((match = re.exec(rawtext)) != null) {
-                rawtext = rawtext.slice(0, match.index+match[0].length-1) + rawtext.slice(match.index+match[0].length-1, match.index+match[0].length).toUpperCase() + rawtext.slice(match.index+match[0].length);
-            }*/
-            $('body').html(rawtext);
-            
-                        
             /////////////////////////////
             // end of bookmarklet code //
             /////////////////////////////
             
-            hide_throbber();
+            hide_throbber(jQuery);
             
         })(jQuery);
     }
     
     //hide throbber
-    var hide_throbber = function() {
-	$('#ubn2rbnthrobber').remove();
+    var hide_throbber = function(jQuery) {
+        var $ = jQuery;
+        $('#ubn2rbnthrobber').remove();
     };
     
     initialize();
