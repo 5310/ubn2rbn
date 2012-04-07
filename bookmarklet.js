@@ -7,7 +7,7 @@
     /* This is being done by the bookmarklet script in the link directly
     //show throbber
     var show_throbber = function() {
-	var throbber = document.createElement('div');
+    var throbber = document.createElement('div');
 	throbber.id = 'ubn2rbnthrobber';
 	throbber.innerHTML = "please wait";
 	throbber.style.cssText = "position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.5); text-shadow: 0 0 10px white; font-size: 64px; text-align: center; padding-top: 17%;";
@@ -64,6 +64,14 @@
             ///////////////////////////////////
             // beginning of bookmarklet code //
             ///////////////////////////////////
+            
+            
+            // onigorithmic special cases
+            var specialcase = [
+                [ /([^\s.,:;!?\+\*\/-\\_\'\"্])([^ত])([\s.,:;!?\+\*\/-\\_\'\"])/g, "$1$2"+"্"+"$3"],
+                [ /([ািীুূে])(ত)([^\s.,:;!?\+\*\/-\\_\'\"])/g , "$1$2"+"্"+"$3"]
+            ];
+            
             
             // dictionary declaration //
             
@@ -173,25 +181,14 @@
                 '্':'',
             };
             
+            
             // conversion //
-            
-           
-            // oni's algorithm //
-            var rawtext = $('body').html();
-            var re;
-            re = /[^\sাীুূ্.,-_](ত)[\s.,-_]/g;
-            while ((match = re.exec(rawtext)) != null) {
-                rawtext = rawtext.slice(0, match.index+2) + "্" + rawtext.slice(match.index+2);
-            }
-            /*re = /[^\s্a-bA-B0-9.,-_]([^\s্ঃংৌোৈেৃূুীিাত.,-_])[\s.,-_]/g;
-            while ((match = re.exec(rawtext)) != null) {
-	        rawtext = rawtext.slice(0, match.index+2) + "্" + rawtext.slice(match.index+2);
-            }*/
-            $('body').html(rawtext);
-            
-            
+
             // get selector to replaceText() on
-            var text = $('body *');
+            var text = $('body * :not(script)');
+            
+            for(var i=0; i<specialcase.length; i++)
+                text.replaceText(specialcase[i][0], specialcase[i][1]);  
             
             // do the astral plane!
             var u;
@@ -205,12 +202,7 @@
                 text.replaceText(RegExp(u, 'g'), hackmap[u]);
             for ( u in accentmap )
                 text.replaceText(RegExp(u, 'g'), accentmap[u]);
-                
-                
-            // Final clean-up    
-            var rawtext = $('body').html();
-            rawtext = rawtext.replace(/্/g, "");
-            $('body').html(rawtext);
+
             
             /////////////////////////////
             // end of bookmarklet code //
